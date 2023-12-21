@@ -21,7 +21,7 @@ aside {
 }
 
 .container {
-  background: #ffffff;
+  background: #FFFFF0;
   display: flex;
   flex-direction: row-reverse;
   max-width: 1200px;
@@ -38,21 +38,21 @@ aside {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #434c5a;
+  color: #626e83;
 }
 .contacts-links-type {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  color: #ffffff;
-  margin-right: 10px;
+  color: #DFE0E1;
+  margin-right: 20px;
 }
 
 .contacts-title {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  color: #fffffe;
+  color: #DFE0E1;
   margin-bottom: 20px;
 }
 
