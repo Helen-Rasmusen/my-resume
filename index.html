@@ -1,107 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helen Rasmusen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <a href="" class="header__logo">HR</a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#about" class="nav__link"> About me</a>
-            </li>
-            <li class="nav__item">
-              <a href="#experience" class="nav__link">Experience</a>
-            </li>
-            <li class="nav__item">
-              <a href="#education" class="nav__link">Education</a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a href="misc" class="nav__link">Misc.</a>
-            </li>
-            <li class="nav__item">
-              <a href="contact" class="nav__link"> Contact</a>
-            </li>
-          </ul>
-          <button class="header__burger">
-            <svg viewBox="0 0 24 24" width="24px" class="header__burger_icon">
-              <use href="./sprite.svg#burger-icon"></use>
-            </svg>
-          </button>
-        </nav>
-      </header>
-      <main class="main">
-        <section class="about section" id="about">
-          <div class="about__main">
-            <div class="about__img_wrapper">
-              <img src="./me.png" alt="" class="about__img" width="100px" />
-            </div>
-            <div class="about__text">
-              <h1 class="about__heading">About Me</h1>
-              <h2 class="about__title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum, unde.
-              </h2>
-              <p class="about__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo
-                velit asperiores temporibus repellendus tenetur sapiente
-                necessitatibus soluta voluptates similique assumenda qui eius
-                quod illo iste sint quis quae maxime illum quas consectetur
-                quasi, nemo ipsam! Ex vitae aspernatur dolorem molestias, autem
-                ratione? Quaerat aliquid optio reprehenderit veritatis
-                doloremque sapiente ad, adipisci itaque aut rem quam
-                accusantium.
-              </p>
-            </div>
-          </div>
+</head>
 
-          <ul class="about__list">
-            <li class="about__list_item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-              sit?
-            </li>
-            <li class="about__list_item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-              sit?
-            </li>
-            <li class="about__list_item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-              sit?
-            </li>
-            <li class="about__list_item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-              sit?
-            </li>
-            <li class="about__list_item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-              sit?
-            </li>
-            <li class="about__list_item">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
-              sit?
-            </li>
-          </ul>
-        </section>
-        <section class="experience section" id="experience"></section>
-        <section class="eduction section" id="education"></section>
-        <section class="portfolio section" id="portfolio"></section>
-        <section class="misc section" id="misc"></section>
-        <section class="contact section" id="contact"></section>
-      </main>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title"><a href="" class="header__logo"> HR</a></h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link"> About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#recommendations" class="nav__link">Recommendations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#misc" class="nav__link">Misc.</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <button class="header__burger">
+                    <svg viewBox="0 0 24 24" width="24px" class="header__burger_icon">
+                        <use href="./sprite.svg#burger-icon"></use>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="about section" id="about">
+                <div class="about__main">
+                    <div class="about__img_wrapper">
+                        <img src="./me.png" alt="" class="about__img" />
+                    </div>
+                    <div class="about__text">
+                        <h2 class="about__heading heading">About</h2>
+                        <h3 class="about__title">
+                            Hi, I am Helen, a creative versatile ROI driven UI/UX- and
+                            Product Designer based in Stockholm, Sweden
+                        </h3>
+                        <p class="about__description">
+                            Last two years i have been working as a full-time employee as
+                            UI/UX-Product Designer and Graphic Designer at Vidispine(LINK).
+                        </p>
+                        <p class="about__description">
+                            With more than two decades of experience in digital design,
+                            graphic art, and visual design, I possess extensive knowledge of
+                            design principles, tools, and techniques.
+                        </p>
+                        <p class="about__description">
+                            My attention to detail, expertise in colors and typography, and ability to work
+                            with various media such as infographics, motion graphics, and
+                            video editing enable me to create top-notch B2B content. My
+                            guiding principle is to design for the users, not for personal
+                            preferences, as I always endeavor to understand their needs and
+                            assist them in their daily tasks.
+
+                        <p class="about__description">
+                            Let's discuss Your Project.
+                            Helen
+                        </p>
+                    </div>
+                </div>
+
+                <ul class="about__list">
+                    <li class="about__list_item">
+                        <h4 class="about__subtitle">My latest Design Tasks</h4>
+                        <ul class="about__context context">
+                            <li class="context_item">- Sketches/Product Concepts</li>
+                            <li class="context_item">- Wire frames</li>
+                            <li class="context_item">- Prototypes</li>
+                            <li class="context_item">- Interaction Design</li>
+                            <li class="context_item">- A/B Tests, Analytics, Research</li>
+                            <li class="context_item">
+                                - Final Arts, High Fidelity Prototypes
+                            </li>
+                            <li class="context_item">- Style Guides</li>
+                        </ul>
+                    </li>
+                    <li class="about__list_item">
+                        <h4 class="about__subtitle">All-in-One</h4>
+                        <ul class="about__context context">
+                            <li class="context_item">- UI/UX Designer</li>
+                            <li class="context_item">- Video Editor</li>
+                            <li class="context_item">- Graphic Designer</li>
+                            <li class="context_item">- Motion Designer</li>
+                            <li class="context_item">- Product Designer</li>
+                            <li class="context_item">- Illustrator/Artist</li>
+                        </ul>
+                        <p class="context_paragraph">
+                            All above includes producing Art, Ads, Icons, Logotypes, Brand
+                            Identity, Videos, Content Design in Social Media, Instagram, Facebook and TikTok Stories and
+                            Posts
+                        </p>
+                    </li>
+                    <li class="about__list_item">
+                        <h4 class="about__subtitle">Software Skills</h4>
+                        <ul class="about__context context">
+                            <li class="context_item">- Figma</li>
+                            <li class="context_item">- XD</li>
+                            <li class="context_item">- Sketch</li>
+                            <li class="context_item">- Illustrator</li>
+                            <li class="context_item">- Photoshop</li>
+                            <li class="context_item">- Premiere</li>
+                            <li class="context_item">- After Effects</li>
+                            <li class="context_item">- MicroSoft Office package</li>
+                            <li class="context_item">- Azure DevOps</li>
+                            <li class="context_item">- Atlassian</li>
+                            <li class="context_item">- Trello</li>
+                            <li class="context_item">- Clarity</li>
+                            <li class="context_item">- Confluence</li>
+                            <li class="context_item">- InDesign</li>
+                            <li class="context_item">- Slack</li>
+                        </ul>
+                    </li>
+                    <li class="about__list_item">
+                        <h4 class="about__subtitle">Also producing</h4>
+                        <ul class="about__context context">
+                            <li class="context_item">- Infographics 2D and 3D</li>
+                            <li class="context_item">
+                                - Illustrations, vector and free hand
+                            </li>
+                            <li class="context_item">- Picture montage and Retouch</li>
+                            <li class="context_item">- Graphs, Charts and Maps</li>
+                            <li class="context_item">- Motion Videos</li>
+                            <li class="context_item">- Photography Set ups and Directing</li>
+                            <li class="context_item">- 3D Cut away Graphics</li>
+                        </ul>
+                    </li>
+                    <li class="about__list_item">
+                        <h4 class="about__subtitle">Extras</h4>
+                        <ul class="about__context context">
+                            <li class="context_item">- Long experience in Leading position including Budgetary and
+                                staff responsibilies</li>
+                            <li class="context_item">- Knowledge in AI, SEO and EPI
+                            <li class="context_item">- Experienced in UX Writing and Journalism</li>
+                            <li class="context_item">- Experienced in Media, Print and Web publishing</li>
+                            <li class="context_item">- Knowledge in Package, Banner and Car Folio Design</li>
+                    </li>
+                </ul>
+                </li>
+                <li class="about__list_item">
+                    <h4 class="about__subtitle">Nationality and Residence</h4>
+                    <ul class="about__context context">
+                        <li class="context_item">- Nationality: Swedish</li>
+                        <li class="context_item">- Native language: Swedish</li>
+                        <li class="context_item">
+                            - Other languages: English (fluent), German (understand
+                            written)
+                        </li>
+                        <li class="context_item">
+                            - Residence: Kungsholmen, Stockholm, Sweden
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+            </section>
+
+
+
+            <section class="experience section" id="experience">
+                <div class="experience__wrapper">
+                <h2 class="experience__heading heading">Experience</h2>
+                <ul class="experience__list">
+                    <li class="experience__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</li>
+                    <li class="experience__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</li>
+                    <li class="experience__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</li>
+                    <li class="experience__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</li>
+                    <li class="experience__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</li>
+                    <li class="experience__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</li>
+
+                </ul>
+              
+    
+            </div>
+            </section>
+
+
+
+
+
+
+            <section class="eduction section" id="education">
+                Eduction section
+            </section>
+            <section class="portfolio section" id="portfolio">
+                Portfolio section
+            </section>
+            <section class="recommendations section" id="recommendations">
+                Recommendations section
+            </section>
+            <section class="misc section" id="misc">
+                Misc. & Awards section
+            </section>
+            <section class="contact section" id="contact">
+                Contact section
+            </section>
+        </main>
     </div>
-  </body>
+</body>
+
 </html>
+
+notes:
+MISC: Includes AWARDS
+TWO BUTTONS: Go to Top and Download CV pdf-file
+LINKS to News articles
