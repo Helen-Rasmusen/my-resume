@@ -1,6 +1,6 @@
 :root {
     --container-width: 1200px;
-    --primary-text-color: #c1c1c1;
+    --primary-text-color: #121212;
     --title-color: #909090;
     --primary-font-size: 16px;
     --font-family: "Open Sans", sans-serif;
@@ -8,7 +8,7 @@
     --text-line-height: 1.8;
     --spacing-desktop: 40px;
     --spacing-mobile: 40px;
-    --bgcolor-body: #0f0c03;
+    --bgcolor-body: #fbfcfa;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --animation-duration: 250ms;
 }
@@ -440,6 +440,8 @@ a {
     transform: scale(1);
 }
 
+
+
 .lightbox__image {
     display: block;
     width: auto;
@@ -450,8 +452,6 @@ a {
 
 .lightbox__button {
     position: absolute;
-    top: 8px;
-    right: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,20 +461,40 @@ a {
     margin: 0;
     border: none;
     border-radius: 50%;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color var(--animation-duration) var(--timing-function);
     outline: none;
-    background-image: url('../assets/close.svg');
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color var(--animation-duration) var(--timing-function);
+
 }
 
 .lightbox__button:hover,
 .lightbox__button:focus {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightbox__close {
+    top: 8px;
+    right: 8px;
+    background-image: url('../assets/close.svg');
+}
+
+.lightbox__arrow-left {
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    background-image: url('../assets/arrow-left.svg');
+}
+
+.lightbox__arrow-right {
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    transition: background-color var(--animation-duration) var(--timing-function);
+    background-image: url('../assets/arrow-right.svg');
 }
 
 
@@ -622,7 +642,7 @@ a {
 
 
     .nav {
-        position: relative;
+        /* position: relative; */
         z-index: 200;
         /* overflow: hidden; */
     }
@@ -634,8 +654,8 @@ a {
     .nav__list {
         display: block;
         position: absolute;
-        top: -1px;
-        right: -20px;
+        top: 40px;
+        right: 0px;
         width: 100%;
         /* height: 0px; */
         max-height: 0%;

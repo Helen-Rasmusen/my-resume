@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -248,40 +249,19 @@
                     <ul class=" portfolio__list"></ul>
 
                     <div class="lightbox">
-                      <div class="lightbox__overlay"></div>
-                
-                      <div class="lightbox__content">
-                        <img class="lightbox__image" src="" alt="" />
-                      </div>
-                
-                      <button
-                        type="button"
-                        class="lightbox__button"
-                        data-action="close-lightbox"
-                      ></button>
+                        <div class="lightbox__overlay"></div>
+
+                        <div class="lightbox__content">
+                        <a class="lightbox__link" target="_blank">
+                             <img class="lightbox__image" src="" alt=""/> 
+                        </a>
+                        </div>
+
+                        <button type="button" class="lightbox__button lightbox__arrow-left" data-action="move-left"></button> <button
+                            type="button" class="lightbox__button lightbox__arrow-right" data-action="move-right"></button>
+                        <button type="button" class="lightbox__button lightbox__close" data-action="close-lightbox"></button>
                     </div>
 
-                    <!-- <ul class="portfolio__list">
-                        <li class="portfolio__item">
-                            <img src="./assets/picture1.jpg" alt=""">
-                        </li>
-                        <li class=" portfolio__item">
-                            <img src="./assets/picture2.jpg" alt="">
-                        </li>
-                        <li class="portfolio__item">
-                            <img src="./assets/picture1.jpg" alt=""">
-                        </li>
-                        <li class=" portfolio__item">
-                            <img src="./assets/picture2.jpg" alt="">
-                        </li>
-                        <li class="portfolio__item">
-                            <img src="./assets/picture1.jpg" alt=""">
-                        </li>
-                        <li class=" portfolio__item">
-                            <img src="./assets/picture2.jpg" alt="">
-                        </li>
-
-                    </ul> -->
                 </div>
             </section>
 
@@ -315,7 +295,7 @@
 
 
 
-      
+
             <section class="misc section">
                 <div class="misc__wrapper">
                     <h2 class="misc__heading heading">Misc.</h2>
@@ -418,9 +398,10 @@
                     </div>
                 </div>
             </section>
+            <a href="./24E Helen Rasmusen CV_XL2.pdf" download>Download CV</a>
         </main>
-    </div>    
-    <script src="./portfolio-items.js"></script>
+    </div>
+    <script src="./portfolio-items.js" type="module"></script>
     <script src="./portfolio.js" type="module"></script>
     <script src="./js/script.js" type="module"></script>
 </body>
@@ -435,3 +416,7 @@ BUTTON: Download CV (pdf-file)
 Clickable popup images, slides. also on references.
 Contact format fields
 bckcolor test:#f7f7f5 white background: #FBFCFA--- Built by KUDJO © All Rights Reserved 2024 -->
+darkmode:
+--bgcolor-body: #0f0c03;
+--primary-text-color: #c1c1c1;
+--title-color: #909090;
