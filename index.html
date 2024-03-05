@@ -83,7 +83,33 @@
                         </div>
                     </div>
                 </div>
+            </section>
 
+            <section class="portfolio section">
+                <div class="portfolio__wrapper">
+                    <h2 class="portfolio__heading heading">Portfolio</h2>
+                    <ul class=" portfolio__list"></ul>
+
+                    <div class="lightbox">
+                        <div class="lightbox__overlay"></div>
+
+                        <div class="lightbox__content">
+                            <a class="lightbox__link" target="_blank">
+                                <img class="lightbox__image" src="" alt="" />
+                            </a>
+                        </div>
+
+                        <button type="button" class="lightbox__button lightbox__arrow-left"
+                            data-action="move-left"></button> <button type="button"
+                            class="lightbox__button lightbox__arrow-right" data-action="move-right"></button>
+                        <button type="button" class="lightbox__button lightbox__close"
+                            data-action="close-lightbox"></button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="about section">
                 <ul class="about__list">
                     <li class="about__list_item">
                         <h4 class="about__subtitle">My latest Design Tasks</h4>
@@ -176,6 +202,8 @@
                 </ul>
             </section>
 
+      
+
             <section class="experience section">
                 <div class="experience__wrapper">
                     <h2 class="experience__heading heading">Experience</h2>
@@ -246,29 +274,7 @@
                 </div>
             </section>
 
-            <section class="portfolio section">
-                <div class="portfolio__wrapper">
-                    <h2 class="portfolio__heading heading">Portfolio</h2>
-                    <ul class=" portfolio__list"></ul>
-
-                    <div class="lightbox">
-                        <div class="lightbox__overlay"></div>
-
-                        <div class="lightbox__content">
-                            <a class="lightbox__link" target="_blank">
-                                <img class="lightbox__image" src="" alt="" />
-                            </a>
-                        </div>
-
-                        <button type="button" class="lightbox__button lightbox__arrow-left"
-                            data-action="move-left"></button> <button type="button"
-                            class="lightbox__button lightbox__arrow-right" data-action="move-right"></button>
-                        <button type="button" class="lightbox__button lightbox__close"
-                            data-action="close-lightbox"></button>
-                    </div>
-
-                </div>
-            </section>
+    
 
             <section class="education section">
                 <div class="education__wrapper">
@@ -393,7 +399,7 @@
 
             <section class="contact section">
                 <div class="contact__wrapper">
-                    <h2 class="contact__heading heading">Contact</h2>
+                    <h2 class="contact__heading heading">Links</h2>
                     <div class="contact__item">
                         <svg viewBox="0 0 26 27" width="24px" class="contact__linkedin-icon">
                             <use href="./sprite.svg#linkedin-icon"></use>
@@ -403,13 +409,15 @@
                     </div>
                 </div>
             </section>
+
             <section class="copyright section">
                 <p class="copyright__wrapper">
                     <span class="copyright__author">
                         Built by <a href="https://github.com/virysik" target="_blank" class="copyright__link">KUZJO </a>
                     </span>
                     <span class="copyright__text">
-                        &#64; All Rights Reserved 2024
+                        &#64; All Rights Reserved       
+                        <span class="copyright__year"></span>
                     </span>
                 </p>
             </section>

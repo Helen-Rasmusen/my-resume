@@ -104,3 +104,9 @@ if (menuLinks.length > 0) {
     }
   }
 }
+
+//date
+const copyrightYear = document.querySelector(".copyright__year");
+const date = new Date();
+const currentYear = date.getFullYear();
+copyrightYear.innerHTML = currentYear;

@@ -4,10 +4,6 @@ const createMarkUp = (obj) => {
   return obj
     .map(({ id, preview, original, description }) => {
       return `<li class="portfolio__item">
-        <a
-          class="portfolio__link"
-          href="#"
-        >
           <img
             loading = "lazy"
             class="portfolio__image"
@@ -16,7 +12,6 @@ const createMarkUp = (obj) => {
             data-id=${id}
             alt=${description}
           />
-        </a>
       </li>
       `;
     })
