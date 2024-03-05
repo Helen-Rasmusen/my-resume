@@ -3,7 +3,8 @@ export default [
     id: "01",
     preview: "./assets/picture1.jpg",
     original: "./assets/picture1.jpg",
-    description: "Hokkaido Flower 1",
+    description:
+      "Hokkaido Flower 1 Hokkaido Flower 1Hokkaido Flower 1Hokkaido Flower 1v",
   },
   {
     id: "02",
@@ -13,14 +14,14 @@ export default [
   },
   {
     id: "03",
-    preview: "./assets/picture1.jpg",
-    original: "./assets/picture1.jpg",
+    preview: "./assets/picture3.jpg",
+    original: "./assets/picture3.jpg",
     description: "Hokkaido Flower 3",
   },
   {
     id: "04",
-    preview: "./assets/picture2.jpg",
-    original: "./assets/picture2.jpg",
+    preview: "./assets/picture4.jpg",
+    original: "./assets/picture4.jpg",
     description: "Hokkaido Flower 4",
   },
   {
@@ -31,8 +32,8 @@ export default [
   },
   {
     id: "06",
-    preview: "./assets/picture2.jpg",
-    original: "./assets/picture2.jpg",
+    preview: "./assets/picture3.jpg",
+    original: "./assets/picture3.jpg",
     description: "Hokkaido Flower 6",
   },
 ];

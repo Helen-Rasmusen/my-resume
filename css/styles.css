@@ -425,6 +425,29 @@ a {
     cursor: zoom-in;
 }
 
+
+.portfolio__description {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    text-align: center;
+    transform: translate(-50%, 100%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: transform var(--animation-duration) var(--timing-function);
+    pointer-events: none;
+}
+
+.portfolio__item:hover .portfolio__description,
+.portfolio__item:focus .portfolio__description {
+    transform: translate(-50%, 0%);
+
+}
+
 .portfolio__image {
     position: absolute;
     top: 0;
@@ -470,7 +493,6 @@ a {
 }
 
 .lightbox__content {
-
     transform: scale(0.95);
     transition: transform var(--animation-duration) var(--timing-function);
 }

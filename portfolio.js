@@ -12,6 +12,7 @@ const createMarkUp = (obj) => {
             data-id=${id}
             alt=${description}
           />
+          <span class="portfolio__description">${description}</span>
       </li>
       `;
     })
