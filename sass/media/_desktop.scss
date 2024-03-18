@@ -14,10 +14,6 @@
 
   /*----------ABOUT STYLES------------*/
 
-  .about {
-    /* row-gap: $spacing-desktop; */
-  }
-
   .about__main {
     display: grid;
     grid-template: 1fr/40% 60%;
@@ -25,20 +21,14 @@
 
   .about__img_wrapper {
     max-height: 260px;
-    /* grid-area: bild; */
   }
 
   .about__text {
     margin-left: $spacing-desktop;
-    /* grid-area: description; */
   }
 
   .about__title {
     font-size: 30px;
-  }
-
-  .about__subtitle {
-    /* font-size: 24px; */
   }
 
   .about__contact {
@@ -98,15 +88,6 @@
     cursor: zoom-in;
   }
 
-  .portfolio__item {
-  }
-
-  .portfolio__link {
-  }
-
-  .portfolio__image {
-  }
-
   /*----------------PORTFOLIO END------------------*/
 
   /*----------------LIGHTBOX------------------*/
@@ -124,9 +105,6 @@
   }
 
   /*----------------LIGHTBOX END------------------*/
-
-  /*----------------RECOMMENDATIONS------------------*/
-  /*----------------RECOMMENDATIONS END------------------*/
 
   /*----------------COPYRIGHT END------------------*/
 

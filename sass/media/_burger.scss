@@ -6,56 +6,53 @@
     width: 30px;
     height: 18px;
     cursor: pointer;
-  }
 
-  .menu__icon span,
-  .menu__icon::before,
-  .menu__icon::after {
-    position: absolute;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: $primary-text-color;
-  }
+    & span,
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: $primary-text-color;
+    }
 
-  .menu__icon::before,
-  .menu__icon::after {
-    content: "";
-  }
+    &::before,
+    &::after {
+      content: "";
+    }
 
-  .menu__icon::before {
-    top: 0;
-  }
+    &::before {
+      top: 0;
+    }
 
-  .menu__icon::after {
-    bottom: 0;
-  }
+    &::after {
+      bottom: 0;
+    }
 
-  .menu__icon span {
-    top: 50%;
-    transform: scale(1) translate(0px, -50%);
-  }
+    & span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
 
-  .menu__icon._active span {
-    transform: scale(0) translate(0px, -50%);
-  }
+    &._active span {
+      transform: scale(0) translate(0px, -50%);
+    }
 
-  .menu__icon._active::before {
-    top: 50%;
-    transform: rotate(-45deg) translate(0px, -50%);
-  }
+    &._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+    }
 
-  .menu__icon._active::after {
-    bottom: 50%;
-    transform: rotate(45deg) translate(0px, 50%);
+    &._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+    }
   }
 
   .nav {
     z-index: 200;
-  }
-
-  .nav._active {
   }
 
   .nav__list {
@@ -77,17 +74,17 @@
 
     pointer-events: none;
     visibility: hidden;
-  }
 
-  .nav__list._active {
-    height: fit-content;
-    max-height: 500px;
-    padding: 40px 30px 30px 70px;
+    &._active {
+      height: fit-content;
+      max-height: 500px;
+      padding: 40px 30px 30px 70px;
 
-    pointer-events: inherit;
-    visibility: visible;
-    opacity: 1;
-    transition: max-height 500ms ease;
+      pointer-events: inherit;
+      visibility: visible;
+      opacity: 1;
+      transition: max-height 500ms ease;
+    }
   }
 
   .nav__link {

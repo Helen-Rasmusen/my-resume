@@ -14,8 +14,6 @@
 
 .header__title {
   grid-column: 2/3;
-  /* padding-top: 15px;
-    padding-bottom: 15px; */
   color: $primary-text-color;
   font-family: $font-family-secondary;
   font-weight: 700;
@@ -24,5 +22,4 @@
 
 .header__logo {
   color: $primary-text-color;
-  /* font-family: $font-family; */
 }

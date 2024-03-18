@@ -5,11 +5,13 @@
   cursor: pointer;
 }
 
-.contact__item:hover .contact__link {
+.contact__item:hover .contact__link,
+.contact__item:focus .contact__link {
   color: $title-color;
 }
 
-.contact__item:hover .contact__linkedin-icon {
+.contact__item:hover .contact__linkedin-icon,
+.contact__item:focus .contact__linkedin-icon {
   fill: $title-color;
 }
 

@@ -26,9 +26,6 @@
   filter: grayscale(100%);
 }
 
-.about__text {
-}
-
 .about__heading {
   margin: 0px 0px 30px 0px;
 }
@@ -45,25 +42,20 @@
   color: $primary-text-color;
   font-weight: 600;
   transition: color $animation-duration $timing-function;
-}
 
-.about__link:hover,
-.about__link:focus {
-  color: $title-color;
-}
-
-.lightbox__button:hover,
-.lightbox__button:focus {
-  background-color: rgba(0, 0, 0, 0.5);
+  &:hover,
+  &:focus {
+    color: $title-color;
+  }
 }
 
 .about__description {
   margin: 0px 0px 20px 0px;
   line-height: $text-line-height;
-}
 
-.about__description:last-child {
-  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .about__contact {
@@ -79,11 +71,11 @@
   font-weight: 600;
   color: inherit;
   transition: color $animation-duration $timing-function;
-}
 
-.about__mail:hover,
-.about__mail:focus {
-  color: $title-color;
+  &:hover,
+  &:focus {
+    color: $title-color;
+  }
 }
 
 .about__mail-icon {
@@ -103,19 +95,11 @@
   border-radius: 40px;
   background-color: #90909070;
   transition: background-color $animation-duration $timing-function;
-}
 
-.about__cv-download:hover,
-.about__cv-download:focus {
-  background-color: $title-color;
-}
-
-.about__download-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url(../../assets/download.svg);
-  background-repeat: no-repeat;
+  &:hover,
+  &:focus {
+    background-color: $title-color;
+  }
 }
 
 .about__list {
@@ -126,16 +110,10 @@
   gap: $spacing-mobile;
 }
 
-.about__list_item {
-}
-
 .about__subtitle {
   font-size: 18px;
   font-weight: 600;
   margin: 0px 0px 20px 0px;
-}
-
-.about__context {
 }
 
 .context_item {

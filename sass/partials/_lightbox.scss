@@ -10,12 +10,12 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity $animation-duration $timing-function;
-}
 
-.lightbox.is-open {
-  opacity: 1;
-  pointer-events: initial;
-  z-index: 111111;
+  &.is-open {
+    opacity: 1;
+    pointer-events: initial;
+    z-index: 111111;
+  }
 }
 
 .lightbox__overlay {
@@ -30,10 +30,10 @@
 .lightbox__content {
   transform: scale(0.95);
   transition: transform $animation-duration $timing-function;
-}
 
-.lightbox.is-open .lightbox__content {
-  transform: scale(1);
+  .lightbox.is-open & {
+    transform: scale(1);
+  }
 }
 
 .lightbox__image {
@@ -63,13 +63,12 @@
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 8px 0px;
   background-color: rgba(0, 0, 0, 0.2);
-
   transition: background-color $animation-duration $timing-function;
-}
 
-.lightbox__button:hover,
-.lightbox__button:focus {
-  background-color: rgba(0, 0, 0, 0.5);
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .lightbox__close {

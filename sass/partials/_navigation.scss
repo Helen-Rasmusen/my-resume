@@ -21,10 +21,11 @@
   font-family: $font-family;
   color: $primary-text-color;
   transition: 250ms all ease-in-out;
-}
 
-.nav__link:hover {
-  color: $title-color;
+  &:hover,
+  &:focus {
+    color: $title-color;
+  }
 }
 
 .menu__icon {
