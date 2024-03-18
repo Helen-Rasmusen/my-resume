@@ -1,0 +1,32 @@
+.nav {
+  grid-column: 3/4;
+  display: grid;
+  justify-items: end;
+}
+
+.nav__list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+}
+
+.nav__item {
+  margin: 0px 0px 0px 60px;
+}
+
+.nav__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: $font-family;
+  color: $primary-text-color;
+  transition: 250ms all ease-in-out;
+}
+
+.nav__link:hover {
+  color: $title-color;
+}
+
+.menu__icon {
+  display: none;
+}

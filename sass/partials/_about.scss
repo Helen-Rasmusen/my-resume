@@ -1,0 +1,147 @@
+.about {
+  display: grid;
+  grid-template: 1fr/ 1fr minmax(auto, $container-width) 1fr;
+}
+
+.about__main {
+  grid-column: 2/3;
+  display: grid;
+  row-gap: $spacing-mobile;
+}
+
+.about__img_wrapper {
+  position: relative;
+  padding: 0px 0px 85% 0px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.about__text {
+}
+
+.about__heading {
+  margin: 0px 0px 30px 0px;
+}
+
+.about__title {
+  margin: 0px 0px 30px 0px;
+  font-size: 24px;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.about__link {
+  color: $primary-text-color;
+  font-weight: 600;
+  transition: color $animation-duration $timing-function;
+}
+
+.about__link:hover,
+.about__link:focus {
+  color: $title-color;
+}
+
+.lightbox__button:hover,
+.lightbox__button:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about__description {
+  margin: 0px 0px 20px 0px;
+  line-height: $text-line-height;
+}
+
+.about__description:last-child {
+  margin: 0;
+}
+
+.about__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about__mail {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: inherit;
+  transition: color $animation-duration $timing-function;
+}
+
+.about__mail:hover,
+.about__mail:focus {
+  color: $title-color;
+}
+
+.about__mail-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../../assets/mail-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.about__cv-download {
+  align-self: flex-end;
+  padding: 12px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 40px;
+  background-color: #90909070;
+  transition: background-color $animation-duration $timing-function;
+}
+
+.about__cv-download:hover,
+.about__cv-download:focus {
+  background-color: $title-color;
+}
+
+.about__download-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../../assets/download.svg);
+  background-repeat: no-repeat;
+}
+
+.about__list {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: $spacing-mobile;
+}
+
+.about__list_item {
+}
+
+.about__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 20px 0px;
+}
+
+.about__context {
+}
+
+.context_item {
+  line-height: $text-line-height;
+}
+
+.context_paragraph {
+  margin: 20px 0px 0px 0px;
+}

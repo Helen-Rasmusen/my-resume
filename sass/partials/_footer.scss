@@ -1,0 +1,26 @@
+.copyright {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 2;
+
+  color: #606060;
+  background-color: #90909070;
+}
+
+.copyright__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright__author {
+  letter-spacing: 0.2em;
+}
+
+.copyright__text {
+  letter-spacing: 0.1em;
+}
+
+.copyright__link {
+  color: inherit;
+}

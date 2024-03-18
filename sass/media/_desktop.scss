@@ -1,0 +1,139 @@
+@media screen and (min-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /*----------ABOUT STYLES------------*/
+
+  .about {
+    /* row-gap: $spacing-desktop; */
+  }
+
+  .about__main {
+    display: grid;
+    grid-template: 1fr/40% 60%;
+  }
+
+  .about__img_wrapper {
+    max-height: 260px;
+    /* grid-area: bild; */
+  }
+
+  .about__text {
+    margin-left: $spacing-desktop;
+    /* grid-area: description; */
+  }
+
+  .about__title {
+    font-size: 30px;
+  }
+
+  .about__subtitle {
+    /* font-size: 24px; */
+  }
+
+  .about__contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about__list {
+    gap: $spacing-desktop;
+  }
+
+  /*----------ABOUT END------------*/
+
+  /*----------------EXPIRIENCE, EDUCATION, MISC,RECOMMENDATION, CONTACT------------------*/
+
+  .experience__wrapper,
+  .education__wrapper,
+  .misc__wrapper,
+  .recommendations__wrapper,
+  .contact__wrapper {
+    gap: $spacing-desktop;
+    grid-template: 1fr/ 200px 1fr;
+  }
+
+  .experience__list,
+  .education__list,
+  .recommendations__list,
+  .misc__list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-desktop;
+  }
+
+  .expirience__item-subtitle,
+  .education__item-subtitle,
+  .misc__item-subtitle {
+    font-size: 16px;
+  }
+
+  /*----------------EXPIRIENCE, EDUCATION, MISC, CONTACT END------------------*/
+
+  /*----------------PORTFOLIO------------------*/
+
+  .portfolio__wrapper {
+    gap: $spacing-desktop;
+    grid-template: 1fr/ 200px 1fr;
+  }
+
+  .portfolio__list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-desktop;
+  }
+
+  .portfolio__item:hover,
+  .portfolio__item:focus {
+    transform: scale(1.1);
+    cursor: zoom-in;
+  }
+
+  .portfolio__item {
+  }
+
+  .portfolio__link {
+  }
+
+  .portfolio__image {
+  }
+
+  /*----------------PORTFOLIO END------------------*/
+
+  /*----------------LIGHTBOX------------------*/
+
+  .lightbox__close {
+    right: $lightbox-btn-distance;
+  }
+
+  .lightbox__arrow-left {
+    left: $lightbox-btn-distance;
+  }
+
+  .lightbox__arrow-right {
+    right: $lightbox-btn-distance;
+  }
+
+  /*----------------LIGHTBOX END------------------*/
+
+  /*----------------RECOMMENDATIONS------------------*/
+  /*----------------RECOMMENDATIONS END------------------*/
+
+  /*----------------COPYRIGHT END------------------*/
+
+  .copyright__wrapper {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  /*----------------COPYRIGHT------------------*/
+}

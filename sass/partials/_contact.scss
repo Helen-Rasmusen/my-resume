@@ -1,0 +1,26 @@
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.contact__item:hover .contact__link {
+  color: $title-color;
+}
+
+.contact__item:hover .contact__linkedin-icon {
+  fill: $title-color;
+}
+
+.contact__link {
+  display: block;
+  font-family: $font-family;
+  color: $primary-text-color;
+  transition: 250ms color ease-in-out;
+}
+
+.contact__linkedin-icon {
+  fill: $primary-text-color;
+  transition: 250ms fill ease-in-out;
+}

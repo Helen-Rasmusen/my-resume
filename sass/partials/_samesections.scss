@@ -1,0 +1,50 @@
+.experience,
+.education,
+.misc,
+.recommendations,
+.contact {
+  display: grid;
+  grid-template: 1fr/ 1fr minmax(auto, $container-width) 1fr;
+}
+
+.experience__wrapper,
+.education__wrapper,
+.misc__wrapper,
+.recommendations__wrapper,
+.contact__wrapper {
+  grid-column: 2/3;
+  display: grid;
+  gap: $spacing-mobile;
+}
+
+.experience__list,
+.education__list,
+.recommendations__list,
+.misc__list {
+  display: grid;
+  gap: $spacing-mobile;
+}
+
+.experience__item,
+.education__item,
+.recommendations__item,
+.misc__item {
+}
+
+.expirience__item-title,
+.education__item-title,
+.recommendations__item-title,
+.misc__item-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.expirience__item-subtitle,
+.education__item-subtitle,
+.misc__item-subtitle {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 400;
+
+  color: $title-color;
+}
