@@ -233,6 +233,25 @@ a {
     line-height: 1.5;
 }
 
+.about__link {
+    color: var(--primary-text-color);
+    font-weight: 600;
+    transition: color var(--animation-duration) var(--timing-function);
+}
+
+.about__link:hover,
+.about__link:focus {
+    color: var(--title-color)
+}
+
+
+
+.lightbox__button:hover,
+.lightbox__button:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
 .about__description {
     margin: 0px 0px 20px 0px;
     line-height: var(--text-line-height);
@@ -253,12 +272,19 @@ a {
     display: flex;
     align-items: center;
     gap: 4px;
-    font-weight: 500;
+    font-weight: 600;
     color: inherit;
+    transition: color var(--animation-duration) var(--timing-function);
+
 }
 
-.about__mail-icon {
+.about__mail:hover,
+.about__mail:focus {
+    color: var(--title-color)
+}
 
+
+.about__mail-icon {
     display: block;
     width: 20px;
     height: 20px;

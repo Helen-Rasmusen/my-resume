@@ -1,8 +1,8 @@
 export default [
   {
     id: "01",
-    preview: "./assets/picture1.jpg",
-    original: "./assets/picture1.jpg",
+    preview: "./assets/picture01.jpg",
+    original: "./assets/picture01.jpg",
     description: "VidiNet Landingpage 2024",
   },
   {
