@@ -1,0 +1,92 @@
+.lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $animation-duration $timing-function;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: initial;
+    z-index: 111111;
+  }
+}
+
+.lightbox__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox__content {
+  transform: scale(0.95);
+  transition: transform $animation-duration $timing-function;
+
+  .lightbox.is-open & {
+    transform: scale(1);
+  }
+}
+
+.lightbox__image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.lightbox__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 8px 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color $animation-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.lightbox__close {
+  top: 8px;
+  right: 8px;
+  background-image: url("../../assets/close.svg");
+}
+
+.lightbox__arrow-left {
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  background-image: url("../../assets/arrow-left.svg");
+}
+
+.lightbox__arrow-right {
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  background-image: url("../../assets/arrow-right.svg");
+}

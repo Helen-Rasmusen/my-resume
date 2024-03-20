@@ -1,0 +1,25 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  display: grid;
+  align-items: center;
+  grid-template: 1fr/ 1fr minmax(auto, 60px) minmax(auto, 1140px) 1fr;
+  background-color: $bgcolor-body;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.header__title {
+  grid-column: 2/3;
+  color: $primary-text-color;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+}
+
+.header__logo {
+  color: $primary-text-color;
+}
