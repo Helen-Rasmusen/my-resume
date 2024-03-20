@@ -1,18 +1,14 @@
+.contact__links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
 .contact__item {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
   cursor: pointer;
-}
-
-.contact__item:hover .contact__link,
-.contact__item:focus .contact__link {
-  color: $title-color;
-}
-
-.contact__item:hover .contact__linkedin-icon,
-.contact__item:focus .contact__linkedin-icon {
-  fill: $title-color;
 }
 
 .contact__link {
@@ -20,9 +16,20 @@
   font-family: $font-family;
   color: $primary-text-color;
   transition: 250ms color ease-in-out;
+
+  .contact__item:hover &,
+  .contact__item:focus & {
+    color: $title-color;
+  }
 }
 
-.contact__linkedin-icon {
+.contact__linkedin-icon,
+.contact__article-icon {
   fill: $primary-text-color;
   transition: 250ms fill ease-in-out;
+
+  .contact__item:hover &,
+  .contact__item:focus & {
+    fill: $title-color;
+  }
 }

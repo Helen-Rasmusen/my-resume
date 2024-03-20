@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helen Rasmusen</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -203,8 +205,6 @@
                 </ul>
             </section>
 
-      
-
             <section class="experience section">
                 <div class="experience__wrapper">
                     <h2 class="experience__heading heading">Experience</h2>
@@ -324,9 +324,6 @@
                 </div>
             </section>
 
-
-
-
             <section class="misc section">
                 <div class="misc__wrapper">
                     <h2 class="misc__heading heading">Misc.</h2>
@@ -400,36 +397,45 @@
             <section class="contact section">
                 <div class="contact__wrapper">
                     <h2 class="contact__heading heading">Links</h2>
+                    <div class="contact__links">
                     <div class="contact__item">
                         <svg viewBox="0 0 26 27" width="24px" class="contact__linkedin-icon">
-                            <use href="./sprite.svg#linkedin-icon"></use>
+                            <use href="./assets/sprite.svg#linkedin-icon"></use>
                         </svg>
                         <a href="https://www.linkedin.com/in/helenrasmusen/" rel="noopener noreferrer" target="_blank"
                             class="contact__link">LinkedIn</a>
                     </div>
+                    <div class="contact__item">
+                        <svg viewBox="0 0 26 21" width="24px" class="contact__article-icon">
+                            <use href="./assets/sprite.svg#article-icon"></use>
+                        </svg>
+                        <a href="https://www.resume.se/kommunikation/media/hon-ligger-bakom-expressens-rosade-etta/" rel="noopener noreferrer" target="_blank"
+                            class="contact__link">Article</a>
+                    </div></div>
                 </div>
             </section>
 
-            <section class="copyright section">
-                <p class="copyright__wrapper">
-                    <span class="copyright__author">
-                        Built by <a href="https://github.com/virysik" target="_blank" class="copyright__link">KUZJO </a>
-                    </span>
-                    <span class="copyright__text">
-                        &#64; All Rights Reserved       
-                        <span class="copyright__year"></span>
-                    </span>
-                </p>
-            </section>
+           
         </main>
+        <footer class="copyright section">
+            <p class="copyright__wrapper">
+                <span class="copyright__author">
+                    Built by <a href="https://github.com/virysik" target="_blank" class="copyright__link">KUZJO </a>
+                </span>
+                <span class="copyright__text">
+                    &#64; All Rights Reserved       
+                    <span class="copyright__year"></span>
+                </span>
+            </p>
+        </footer>
     </div>
-    <script src="./portfolio-items.js" type="module"></script>
-    <script src="./portfolio.js" type="module"></script>
+    <script src="./js/portfolio-items.js" type="module"></script>
+    <script src="./js/portfolio.js" type="module"></script>
     <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>
-
+<!-- https://www.resume.se/kommunikation/media/hon-ligger-bakom-expressens-rosade-etta/ -->
 <!-- dont forget:
 MISC.: Includes AWARDS
 LINKS to News articles
