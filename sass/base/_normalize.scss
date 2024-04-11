@@ -15,6 +15,7 @@ body {
   font-family: $font-family;
   color: $primary-text-color;
   background-color: $bgcolor-body;
+  line-height: 1.8;
 }
 
 body._lock {
