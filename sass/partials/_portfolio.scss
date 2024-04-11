@@ -43,16 +43,10 @@
   height: 100%;
   padding: 8px;
   text-align: center;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 82%);
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: transform $animation-duration $timing-function;
   pointer-events: none;
-
-  .portfolio__item:hover &,
-  .portfolio__item:focus & {
-    transform: translate(-50%, 0%);
-  }
 }
 
 .portfolio__image {
