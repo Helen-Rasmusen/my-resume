@@ -22,8 +22,9 @@ const createMarkUp = (obj) => {
 const refs = {
   gallery: document.querySelector(".portfolio__list"),
   modal: document.querySelector(".lightbox"),
+  contentLBox: document.querySelector(".lightbox__content"),
   imgLBox: document.querySelector(".lightbox__image"),
-  linkLBox: document.querySelector(".lightbox__link"),
+
   closeBtn: document.querySelector('button[data-action="close-lightbox"]'),
   leftBtn: document.querySelector('button[data-action="move-left"]'),
   rightBtn: document.querySelector('button[data-action="move-right"]'),
@@ -56,11 +57,43 @@ function openModalWindow(trg) {
   refs.imgLBox.src = trg.dataset.source;
   refs.imgLBox.alt = trg.alt;
   refs.imgLBox.dataset["id"] = trg.dataset["id"];
-  refs.linkLBox.href = trg.dataset.source;
 
+  refs.imgLBox.addEventListener("click", zoomImg);
+  refs.contentLBox.addEventListener("click", zoomContent);
   refs.leftBtn.addEventListener("click", onStepLeft);
   refs.rightBtn.addEventListener("click", onStepRight);
   window.addEventListener("keydown", onArrowClick);
+}
+
+function zoomImg() {
+  const zoomedIn = refs.imgLBox.classList.contains("lightbox__image-zoomin");
+  if (zoomedIn) {
+    refs.imgLBox.classList.remove("lightbox__image-zoomin");
+    refs.imgLBox.classList.add("lightbox__image-zoomout");
+  } else {
+    refs.imgLBox.classList.remove("lightbox__image-zoomout");
+    refs.imgLBox.classList.add("lightbox__image-zoomin");
+  }
+}
+
+function zoomContent() {
+  const zoomedIn = refs.contentLBox.classList.contains(
+    "lightbox__content-zoomin"
+  );
+  if (zoomedIn) {
+    refs.contentLBox.classList.remove("lightbox__content-zoomin");
+    refs.contentLBox.classList.add("lightbox__content-zoomout");
+  } else {
+    refs.contentLBox.classList.remove("lightbox__content-zoomout");
+    refs.contentLBox.classList.add("lightbox__content-zoomin");
+  }
+}
+
+function onStepLeft() {
+  stepImg(-1);
+}
+function onStepRight() {
+  stepImg(1);
 }
 
 function onArrowClick(e) {
@@ -77,17 +110,10 @@ function stepImg(delta) {
   setAttributes(currentSrcIndex);
 }
 
-function onStepLeft() {
-  stepImg(-1);
-}
-function onStepRight() {
-  stepImg(1);
-}
 function setAttributes(index) {
   refs.imgLBox.dataset["id"] = imgIds[index];
   refs.imgLBox.src = imgSrcs[index];
   refs.imgLBox.alt = imgAlts[index];
-  refs.linkLBox.href = imgSrcs[index];
 }
 
 function addCloseListeners() {
@@ -110,6 +136,8 @@ function onModalCloseClick() {
   refs.closeBtn.removeEventListener("click", onModalCloseClick);
   refs.lBoxOverlay.removeEventListener("click", onModalCloseClick);
   refs.body.classList.remove("_lock");
+  refs.imgLBox.removeEventListener("click", zoomImg);
+  refs.contentLBox.removeEventListener("click", zoomContent);
   refs.leftBtn.removeEventListener("click", onStepLeft);
   refs.rightBtn.removeEventListener("click", onStepRight);
   refs.imgLBox.src = "";

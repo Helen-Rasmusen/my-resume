@@ -397,12 +397,30 @@ a {
   transform: scale(1);
 }
 
+.lightbox__content-zoomin {
+  overflow: scroll;
+  height: 100vh;
+}
+
+.lightbox__content-zoomout {
+  width: auto;
+}
+
 .lightbox__image {
   display: block;
-  width: auto;
   height: auto;
+}
+
+.lightbox__image-zoomout {
+  width: auto;
   max-height: 100vh;
   max-width: 100vw;
+  cursor: zoom-in;
+}
+
+.lightbox__image-zoomin {
+  width: 100%;
+  cursor: zoom-out;
 }
 
 .lightbox__button {
@@ -708,13 +726,13 @@ a {
   /*----------------PORTFOLIO END------------------*/
   /*----------------LIGHTBOX------------------*/
   .lightbox__close {
-    right: 20%;
+    right: 10%;
   }
   .lightbox__arrow-left {
-    left: 20%;
+    left: 10%;
   }
   .lightbox__arrow-right {
-    right: 20%;
+    right: 10%;
   }
   /*----------------LIGHTBOX END------------------*/
   /*----------------COPYRIGHT END------------------*/
