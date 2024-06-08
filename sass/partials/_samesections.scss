@@ -42,6 +42,9 @@
 
   color: $title-color;
 }
+.misc__item-subtitle {
+  margin-bottom: 0;
+}
 
 .misc__item-text:not(:last-child) {
   margin-bottom: 20px;

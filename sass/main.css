@@ -1,3 +1,17 @@
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -247,14 +261,13 @@ a {
 .about__subtitle {
   font-size: 18px;
   font-weight: 600;
-  margin: 0px 0px 20px 0px;
 }
 
-.context_item {
+.about__sublist_item {
   line-height: 1.8;
 }
 
-.context_paragraph {
+.about__paragraph {
   margin: 20px 0px 0px 0px;
 }
 
@@ -300,6 +313,10 @@ a {
   font-size: 18px;
   font-weight: 400;
   color: #909090;
+}
+
+.misc__item-subtitle {
+  margin-bottom: 0;
 }
 
 .misc__item-text:not(:last-child) {
@@ -534,6 +551,31 @@ a {
 .contact__item:hover .contact__article-icon,
 .contact__item:focus .contact__article-icon {
   fill: #909090;
+}
+
+.expand__wrapper {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.expand__btn {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/expand.svg);
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+  transform: rotate(0deg);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expand__btn-open {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1100px) {

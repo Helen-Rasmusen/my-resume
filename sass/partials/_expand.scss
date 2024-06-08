@@ -1,0 +1,24 @@
+.expand__wrapper {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.expand__btn {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/expand.svg);
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+  transform: rotate(0deg);
+  transition: all $animation-duration $timing-function;
+}
+
+.expand__btn-open {
+  transform: rotate(180deg);
+}
